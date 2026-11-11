@@ -76,6 +76,9 @@
   .btn:active { transform: translateY(0); }
   .btn .price { background: rgba(255,255,255,.2); padding: 4px 12px; border-radius: 999px; font-weight: 800; }
   @media (prefers-color-scheme: dark) { .btn .price { background: rgba(0,0,0,.18); } }
+  .btn-ghost { background: transparent; color: var(--accent); border: 2px solid var(--accent); box-shadow: none; }
+  .final .btn-ghost { background: transparent; color: #FAF3E7; border-color: #E3D8BD; box-shadow: none; }
+  .final .btn + .btn { margin-left: 8px; margin-top: 8px; }
   .btn-sm { min-height: 44px; padding: 10px 18px; font-size: 15px; }
 
   /* Header */
@@ -226,7 +229,6 @@
     .stage .sheet-cover { animation: none; }
     .btn, .pages li, .sticky { transition: none; }
   }
-  html[data-gumroad-launched] form[data-gumroad-waitlist] { display: none; }
 </style>
 </head>
 <body>
@@ -235,7 +237,7 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Monito Monita Kit, back to top">Monito <span>Monita</span> Kit</a>
-    <button type="button" class="btn btn-sm" data-gumroad-action="buy">Get the kit</button>
+    <a class="btn btn-sm" href="https://jayzedigitalstudio.gumroad.com/l/monito-monita-kit" target="_blank" rel="noopener">Get the kit</a>
   </div>
 </header>
 
@@ -245,18 +247,11 @@
     <div class="wrap">
       <div>
         <span class="eyebrow">Christmas exchange gift set</span>
-        <h1 id="hero-title"><span data-gumroad-field="name">Monito Monita Kit</span>: <em>everything for your gift exchange</em> in one editable set</h1>
+        <h1 id="hero-title">Monito Monita Kit: <em>everything for your gift exchange</em> in one editable set</h1>
         <p class="lede">Invitation, rules, wish list, name draw slips, gift tags and more. Type in your names, date and budget in Canva, then print it or share it in your group chat. No design skills needed.</p>
         <div class="cta-row">
-          <button type="button" class="btn" data-gumroad-action="buy">
-            <span>Get the kit</span>
-            <span class="price" data-gumroad-field="price">Instant download</span>
-          </button>
-          <p class="rating-line">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <span data-gumroad-field="rating">Be the first to review</span>
-            <span data-gumroad-field="review-count"></span>
-          </p>
+          <a class="btn" href="https://jayzedigitalstudio.gumroad.com/l/monito-monita-kit" target="_blank" rel="noopener"><span>Get the kit</span><span class="price">Instant download</span></a>
+          <a class="btn btn-ghost" href="#gcash">Pay with GCash</a>
         </div>
         <ul class="chips" aria-label="Quick facts">
           <li>10 editable pages</li>
@@ -390,16 +385,30 @@
     </div>
   </section>
 
+  <!-- GCASH -->
+  <section class="block" id="gcash" aria-labelledby="gcash-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Pay with GCash</span>
+        <h2 id="gcash-title">Prefer GCash? Order by message</h2>
+        <p>Card and PayPal buyers can use the button above. If you'd rather pay with GCash, follow these steps.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span class="n" aria-hidden="true">1</span><h3>Message me</h3><p>Send "Monito Monita Kit" on Facebook Messenger.</p></li>
+        <li class="reveal"><span class="n" aria-hidden="true">2</span><h3>Pay by GCash</h3><p>I'll reply with the GCash details and the price. Send your payment screenshot.</p></li>
+        <li class="reveal"><span class="n" aria-hidden="true">3</span><h3>Get your kit</h3><p>Once I confirm the payment, I'll send your PDF with the template link.</p></li>
+      </ol>
+      <p style="margin-top:26px"><a class="btn" href="https://www.facebook.com/jc.sumugat/" target="_blank" rel="noopener">Message me on Facebook</a></p>
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <section class="block final" id="buy" aria-labelledby="final-title">
     <div class="wrap">
       <div class="card reveal">
         <h2 id="final-title">Plan your Monito Monita today</h2>
         <p>Get the invitation, rules, wish list, name slips, tags and more in one editable set, and make this year's exchange easy.</p>
-        <button type="button" class="btn" data-gumroad-action="buy">
-          <span>Get the kit</span>
-          <span class="price" data-gumroad-field="price">Instant download</span>
-        </button>
+        <a class="btn" href="https://jayzedigitalstudio.gumroad.com/l/monito-monita-kit" target="_blank" rel="noopener"><span>Get the kit</span><span class="price">Instant download</span></a> <a class="btn btn-ghost" href="#gcash">Pay with GCash</a>
         <small>Instant digital download · Editable in Canva · Personal use</small>
       </div>
     </div>
@@ -417,10 +426,7 @@
     <div class="nm">Monito Monita Kit</div>
     <div class="sub">10 editable pages · instant download</div>
   </div>
-  <button type="button" class="btn btn-sm" data-gumroad-action="buy">
-    <span>Get it</span>
-    <span class="price" data-gumroad-field="price">Buy</span>
-  </button>
+  <a class="btn btn-sm" href="https://jayzedigitalstudio.gumroad.com/l/monito-monita-kit" target="_blank" rel="noopener">Get it</a>
 </div>
 
 <script>
