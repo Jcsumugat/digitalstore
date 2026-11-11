@@ -359,11 +359,9 @@
   .who div:nth-child(4) { border-top-color:var(--gold); }
 
   /* ---------- Blue heart ---------- */
-  .love { position:fixed; right:16px; bottom:calc(88px + env(safe-area-inset-bottom)); z-index:95; width:58px; height:58px; padding:0; border:2px solid #fff; border-radius:50%; cursor:pointer; display:grid; place-items:center;
-    background:radial-gradient(circle at 35% 30%,#fff,#DCEBFA 55%,#B7D2EF); box-shadow:0 10px 24px -8px rgba(27,58,92,.7), 0 0 0 4px rgba(76,143,214,.25); animation:beat 2.4s ease-in-out infinite; }
-  .love svg { width:32px; height:32px; }
-  @media (min-width:900px){ .love { bottom:24px; right:24px; } }
-  @keyframes beat { 0%,70%,100%{transform:scale(1)} 14%{transform:scale(1.13)} 28%{transform:scale(1)} 42%{transform:scale(1.08)} }
+  .love { display:block; margin:10px auto 0 0; padding:6px; border:0; background:none; cursor:pointer; line-height:0; }
+  .love svg { width:22px; height:22px; }
+  .love:focus-visible { outline:3px solid var(--blue); border-radius:6px; }
 
   /* ---------- Lily message ---------- */
   .lily-modal { position:fixed; inset:0; z-index:300; display:grid; place-items:center; padding:20px; overflow:hidden;
@@ -692,7 +690,12 @@
 
 <footer>
   <div class="wrap">
-    <p>Jayze Digital Studio · Digital products only. No physical item will be shipped.</p>
+    <p>Jc's Digital Studio · Digital products only. No physical item will be shipped.</p>
+    <button class="love" id="love" type="button" aria-label="Open a little surprise">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7DB4F2"/><stop offset="1" stop-color="#2A5E9E"/></linearGradient></defs>
+    <path d="M16 28S3 20 3 11.5C3 7 6.4 4 10.2 4c2.4 0 4.4 1.2 5.8 3.2C17.4 5.2 19.4 4 21.8 4 25.6 4 29 7 29 11.5 29 20 16 28 16 28z" fill="url(#hg)"/>
+    <path d="M8 10c.6-2 2.2-3 4-3" stroke="#fff" stroke-opacity=".7" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+</button>
   </div>
 </footer>
 
@@ -705,11 +708,6 @@
 </div>
 
 
-<button class="love" id="love" type="button" aria-label="Open a little surprise">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7DB4F2"/><stop offset="1" stop-color="#2A5E9E"/></linearGradient></defs>
-    <path d="M16 28S3 20 3 11.5C3 7 6.4 4 10.2 4c2.4 0 4.4 1.2 5.8 3.2C17.4 5.2 19.4 4 21.8 4 25.6 4 29 7 29 11.5 29 20 16 28 16 28z" fill="url(#hg)"/>
-    <path d="M8 10c.6-2 2.2-3 4-3" stroke="#fff" stroke-opacity=".7" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
-</button>
 
 <div class="lily-modal" id="lily" role="dialog" aria-modal="true" aria-label="A message with a blue lily" aria-hidden="true">
   <button class="lily-close" id="lilyClose" type="button" aria-label="Close">&#10005;</button>
