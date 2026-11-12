@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Christmas Printable Canva Templates | Monito Monita Kit + Vintage Gift Tags</title>
-<meta name="description" content="Editable Canva templates for your Christmas gift exchange: Monito Monita Kit (10 pages) and Vintage Gift Tags & Cards (9 pages). Instant download, print or share. Bundle ₱299.">
+<title>Christmas Canva Templates | Monito Monita Kit, Vintage Gift Tags, Social Media Pack</title>
+<meta name="description" content="Editable Canva templates for your Christmas gift exchange: Monito Monita Kit (10 pages) and Vintage Gift Tags & Cards (9 pages). Plus a Christmas Social Media Pack for small businesses (24 designs). Instant download. Bundle ₱299.">
 
 <!-- Social preview (Messenger / Facebook) -->
 <meta property="og:type" content="website">
@@ -183,7 +183,8 @@
 
   /* ---------- Products ---------- */
   .grid3 { display: grid; gap: 22px; }
-  @media (min-width: 900px) { .grid3 { grid-template-columns: repeat(3, 1fr); align-items: stretch; } }
+  @media (min-width: 640px) { .grid3 { grid-template-columns: repeat(2, 1fr); align-items: stretch; } }
+  @media (min-width: 1100px) { .grid3 { grid-template-columns: repeat(4, 1fr); } }
   .card {
     position: relative; display: flex; flex-direction: column; gap: 14px; padding: 18px 18px 22px;
     background: var(--paper); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 16px 34px -26px rgba(90,58,42,.6);
@@ -227,6 +228,10 @@
   .panel ol li::before { counter-increment: n; content: counter(n); position: absolute; left: 0; top: 1px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-content: center; background: var(--green); color: #F3E8CF; font: 700 14px var(--serif); }
   .panel ol li:nth-child(3n+2)::before { background: var(--red); }
   .panel ul li::before { content: "❄"; position: absolute; left: 3px; top: 0; color: var(--gold); font-size: 20px; }
+  .panel.wide { grid-column: 1 / -1; }
+  .panel.wide ul { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 22px; }
+  .shop-line { margin-top: 16px; font-size: 15px; color: var(--muted); }
+  .shop-line a { color: var(--green); font-weight: 700; }
 
   /* ---------- Steps ---------- */
   .steps { display: grid; gap: 18px; list-style: none; padding: 0; margin: 0; }
@@ -353,6 +358,7 @@
   .steps li:nth-child(2) .n { background:var(--green); }
   .steps li:nth-child(3) .n { background:var(--blue); }
   .panel:nth-child(2) .count { background:var(--blue); }
+  .panel:nth-child(3) .count { background:var(--red); }
   .who div { border-top:5px solid var(--red); }
   .who div:nth-child(2) { border-top-color:var(--green); }
   .who div:nth-child(3) { border-top-color:var(--blue); }
@@ -403,7 +409,7 @@
 
         <div class="cta-row">
           <a class="btn" href="https://jayzedigitalstudio.gumroad.com/l/christmas-bundle" target="_blank" rel="noopener"><span>Get the Bundle</span><span class="tag">₱299</span></a>
-          <a class="btn btn-ghost" href="#shop">See all 3 options</a>
+          <a class="btn btn-ghost" href="#shop">See all products</a>
         </div>
 
         <ul class="chips" aria-label="Quick facts">
@@ -412,6 +418,7 @@
           <li>A4 print size</li>
           <li>Instant download</li>
         </ul>
+        <p class="shop-line">Running a shop? <a href="#social">See the Christmas Social Media Pack</a></p>
       </div>
 
       <div class="hero-art">
@@ -429,7 +436,7 @@
         <li>Instant download</li>
         <li>Edit in Canva</li>
         <li>Print or share online</li>
-        <li>Made for barkadas &amp; offices</li>
+        <li>Made for barkadas, offices &amp; shops</li>
       </ul>
     </div>
   </div>
@@ -440,7 +447,7 @@
       <div class="sec-head center reveal">
         <span class="kicker">The Christmas shop</span>
         <h2 id="shop-title">Pick your set</h2>
-        <p>Buy one, or grab both together and save ₱99.</p>
+        <p>Buy one, or grab the Monito Monita + Gift Tags bundle and save ₱99. Business owner? The Social Media Pack is for you.</p>
       </div>
 
       <div class="grid3">
@@ -495,6 +502,23 @@
           <a class="btn btn-block" href="https://jayzedigitalstudio.gumroad.com/l/vintage-gift-cards-and-tags" target="_blank" rel="noopener">Get the Tags</a>
           <p class="alt-pay">Prefer GCash? <a href="#gcash">Order by message</a></p>
         </article>
+
+        <!-- Social media pack -->
+        <article class="card reveal" id="social">
+          <div class="frame" data-label="Christmas Social Media Pack">
+            <img src="images/social-pack-cover.webp" width="1080" height="1080" loading="lazy" decoding="async" alt="Christmas Social Media Pack for small businesses: 24 editable Canva designs, 12 posts and 12 stories" onerror="this.parentNode.classList.add('noimg')">
+          </div>
+          <h3>Christmas Social Media Pack</h3>
+          <p class="sub">24 editable designs for Facebook and Instagram: 12 posts and 12 stories, for small businesses.</p>
+          <ul>
+            <li>Sale, giveaway, countdown and gift guide</li>
+            <li>Posts 1080x1080 and stories 1080x1920</li>
+            <li>Add your logo, prices and photos</li>
+          </ul>
+          <div class="price-row"><span class="now">₱249</span></div>
+          <a class="btn btn-block" href="https://jayzedigitalstudio.gumroad.com/l/christmas-social-media-pack" target="_blank" rel="noopener">Get the Pack</a>
+          <p class="alt-pay">Prefer GCash? <a href="#gcash">Order by message</a></p>
+        </article>
       </div>
 
       <div class="compare reveal">
@@ -511,7 +535,7 @@
       <div class="sec-head reveal">
         <span class="kicker">What's inside</span>
         <h2 id="inc-title">Every page, listed</h2>
-        <p>All pages match in style and are ready for your details. The bundle includes both sets.</p>
+        <p>All pages match in style and are ready for your details. The bundle includes the first two sets.</p>
       </div>
 
       <div class="two">
@@ -544,6 +568,27 @@
             <li><strong>8 round "From" sticker labels</strong></li>
             <li><strong>Folded greeting card</strong></li>
             <li><strong>Thank-you card</strong></li>
+            <li><strong>How-to-edit guide</strong></li>
+          </ul>
+        </div>
+
+        <div class="panel wide reveal">
+          <h3>Christmas Social Media Pack</h3>
+          <span class="count">12 designs in 2 sizes · ₱249</span>
+          <ul>
+            <li><strong>Christmas sale</strong></li>
+            <li><strong>Merry Christmas greeting</strong></li>
+            <li><strong>Gift guide</strong></li>
+            <li><strong>Countdown to Christmas</strong></li>
+            <li><strong>Holiday hours</strong></li>
+            <li><strong>Order deadline</strong></li>
+            <li><strong>Customer thank-you</strong></li>
+            <li><strong>Giveaway</strong></li>
+            <li><strong>Bundle or promo</strong></li>
+            <li><strong>Testimonial</strong></li>
+            <li><strong>Gift ideas by budget</strong></li>
+            <li><strong>How to order</strong></li>
+            <li><strong>Every design as a post (1080x1080) and a story (1080x1920)</strong></li>
             <li><strong>How-to-edit guide</strong></li>
           </ul>
         </div>
@@ -596,7 +641,7 @@
         </details>
         <details>
           <summary>What do I actually receive?</summary>
-          <p>A PDF with a button that opens your editable Canva template. The bundle gives you two PDFs, one for each set. This is a digital product, so nothing is shipped.</p>
+          <p>A PDF with a button that opens your editable Canva template. The bundle gives you two PDFs, one for each set. The Social Media Pack gives you one PDF with two buttons, one for the posts and one for the stories. This is a digital product, so nothing is shipped.</p>
         </details>
         <details>
           <summary>What's the difference between the bundle and buying separately?</summary>
@@ -604,11 +649,11 @@
         </details>
         <details>
           <summary>What size is it?</summary>
-          <p>A4 portrait. You can print at home or at a print shop, or share it digitally.</p>
+          <p>The printables are A4 portrait, so you can print at home or at a print shop, or share them digitally. The Social Media Pack has posts at 1080x1080 and stories at 1080x1920.</p>
         </details>
         <details>
           <summary>Can I resell or share the templates?</summary>
-          <p>They are for personal use only. Please don't resell, share or redistribute the templates or their files.</p>
+          <p>The printables are for personal use, and the Social Media Pack is for your own shop's posts. Please don't resell, share or redistribute any templates or their files.</p>
         </details>
         <details>
           <summary>Will colors match my printer?</summary>
@@ -627,11 +672,11 @@
         <p>Card and PayPal buyers can use the buttons above. If you'd rather pay with GCash, follow these steps.</p>
       </div>
       <ol class="steps">
-        <li class="reveal"><span class="n" aria-hidden="true">1</span><h3>Message me</h3><p>Send "Bundle", "Monito Monita Kit" or "Vintage Tags" on Facebook Messenger.</p></li>
+        <li class="reveal"><span class="n" aria-hidden="true">1</span><h3>Message me</h3><p>Send "Bundle", "Monito Monita Kit", "Vintage Tags" or "Social Pack" on Facebook Messenger.</p></li>
         <li class="reveal"><span class="n" aria-hidden="true">2</span><h3>Pay by GCash</h3><p>I'll reply with the GCash details and the price. Send your payment screenshot.</p></li>
         <li class="reveal"><span class="n" aria-hidden="true">3</span><h3>Get your files</h3><p>Once I confirm the payment, I'll send your PDF with the template link.</p></li>
       </ol>
-      <p class="gcash-note reveal"><strong>Prices:</strong> Bundle ₱299 · Monito Monita Kit ₱199 · Vintage Gift Tags &amp; Cards ₱199</p>
+      <p class="gcash-note reveal"><strong>Prices:</strong> Bundle ₱299 · Monito Monita Kit ₱199 · Vintage Gift Tags &amp; Cards ₱199 · Social Media Pack ₱249</p>
       <p style="margin-top:26px"><a class="btn" href="https://www.facebook.com/jc.sumugat/" target="_blank" rel="noopener">Message me on Facebook</a></p>
     </div>
   </section>
@@ -646,7 +691,7 @@
           <a class="btn btn-gold" href="https://jayzedigitalstudio.gumroad.com/l/christmas-bundle" target="_blank" rel="noopener"><span>Get the Bundle</span><span class="tag" style="background:rgba(29,63,46,.14)">₱299</span></a>
           <a class="btn btn-ghost" href="#shop">Or pick one set</a>
         </div>
-        <small>Instant digital download · Editable in Canva · Personal use</small>
+        <small>Instant digital download · Editable in Canva</small>
       </div>
     </div>
   </section>
